@@ -31,6 +31,9 @@ function minMedMax(n1, n2, n3) {
   }else if(n3>n2&&n3<n1){
     mid=n3;
   }
+  if(n2==n3){
+    min=n2,mid=n2;
+  }
   return {min: min,mid: mid,max: max}
 }
 
